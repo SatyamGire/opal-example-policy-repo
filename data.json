@@ -1,28 +1,21 @@
 {
   "users": {
-    "alice": {
-      "roles": ["admin"],
+    "dheeraj": {
+      "roles": ["ADMIN"],
       "location": {
         "country": "US",
         "ip": "8.8.8.8"
       }
     },
-    "bob": {
-      "roles": ["employee", "billing"],
+    "shubham": {
+      "roles": ["MANAGER", "EMPLOYEE"],
       "location": {
         "country": "US",
         "ip": "8.8.8.8"
       }
     },
-     "sunil": {
-      "roles": ["guest"],
-      "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
-      }
-    },
-    "eve": {
-      "roles": ["customer"],
+     "lucky": {
+      "roles": ["EMPLOYEE"],
       "location": {
         "country": "US",
         "ip": "8.8.8.8"
@@ -30,61 +23,41 @@
     }
   },
   "role_permissions": {
-    "customer": [
+    "MANAGER": [
       {
         "action": "read",
-        "type": "dog"
+        "type": "MASTER"
       },
       {
         "action": "read",
-        "type": "cat"
+        "type": "LLP"
       },
       {
         "action": "adopt",
-        "type": "dog"
+        "type": "KMP"
       },
       {
         "action": "adopt",
-        "type": "cat"
+        "type": "MEETING"
       }
     ],
-    "employee": [
+    "EMPLOYEE": [
       {
         "action": "read",
-        "type": "dog"
+        "type": "MASTER"
       },
       {
         "action": "read",
-        "type": "cat"
+        "type": "LLP"
       },
       {
         "action": "update",
-        "type": "dog"
+        "type": "KMP"
       },
       {
         "action": "update",
-        "type": "cat"
+        "type": "MEETING"
       }
-    ],
-    "billing": [
-      {
-        "action": "read",
-        "type": "finance"
-      },
-      {
-        "action": "update",
-        "type": "finance"
-      }
-    ],
-    "guest": [
-     {
-       "action": "read",
-       "type": "cat"
-     },
-     {
-       "action": "read",
-       "type": "finance"
-     }
     ]
   }
 }
