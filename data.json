@@ -33,29 +33,17 @@
         "type": "LLP"
       },
       {
-        "action": "adopt",
+        "action": "read",
         "type": "KMP"
       },
       {
-        "action": "adopt",
+        "action": "read",
         "type": "MEETING"
       }
     ],
     "EMPLOYEE": [
       {
         "action": "read",
-        "type": "MASTER"
-      },
-      {
-        "action": "read",
-        "type": "LLP"
-      },
-      {
-        "action": "update",
-        "type": "KMP"
-      },
-      {
-        "action": "update",
         "type": "MEETING"
       }
     ]
